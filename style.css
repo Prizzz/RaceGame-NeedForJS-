@@ -1,0 +1,134 @@
+body{
+    background: url(image/grass.jpg);
+    background-size: 18%;
+}
+
+.start{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 30px 0;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.score{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 20px 0;
+    z-index: 10;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.hide{
+    display: none;
+}
+
+.car, .enemy{
+    width: 50px;
+    height: 100px;
+    background: transparent url(image/player.png) center / cover no-repeat;
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
+}
+
+.game{
+    height: 100vh;
+}
+
+.gameArea{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background: url(image/road.jpg);
+    background-size: 40%;
+    overflow: hidden;
+}
+
+.line{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: rgb(255, 203, 33);
+    left: 145px;
+}
+
+.over{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px ;
+}
+
+/*--------------------SETTINGS STYLES-------------------*/
+
+.settings{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url(image/setting.png);
+    background-size: 100%;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.settingsWrap{
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 95px;
+    right: 15px;
+    width: 130px;
+    padding: 5px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.settingsWrap span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.settingSound{
+    background: url(image/SoundT.png);
+    background-size: contain !important;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.setting-item{
+    margin-bottom: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
